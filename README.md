@@ -23,7 +23,7 @@ Scikit-learn, Pandas, Matplotlib
 ---
 # code explanation 
 
- importing essential Python libraries:
+ 1.Importing essential Python libraries:
 
 Pandas and NumPy: For handling and manipulating data.
 
