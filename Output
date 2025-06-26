@@ -1,0 +1,90 @@
+First 5 rows:
+       price  area  bedrooms  bathrooms  stories mainroad guestroom basement  \
+0  13300000  7420         4          2        3      yes        no       no   
+1  12250000  8960         4          4        4      yes        no       no   
+2  12250000  9960         3          2        2      yes        no      yes   
+3  12215000  7500         4          2        2      yes        no      yes   
+4  11410000  7420         4          1        2      yes       yes      yes   
+
+  hotwaterheating airconditioning  parking prefarea furnishingstatus  
+0              no             yes        2      yes        furnished  
+1              no             yes        3       no        furnished  
+2              no              no        2      yes   semi-furnished  
+3              no             yes        3      yes        furnished  
+4              no             yes        2       no        furnished  
+
+Summary statistics:
+               price          area    bedrooms   bathrooms     stories  \
+count  5.450000e+02    545.000000  545.000000  545.000000  545.000000   
+mean   4.766729e+06   5150.541284    2.965138    1.286239    1.805505   
+std    1.870440e+06   2170.141023    0.738064    0.502470    0.867492   
+min    1.750000e+06   1650.000000    1.000000    1.000000    1.000000   
+25%    3.430000e+06   3600.000000    2.000000    1.000000    1.000000   
+50%    4.340000e+06   4600.000000    3.000000    1.000000    2.000000   
+75%    5.740000e+06   6360.000000    3.000000    2.000000    2.000000   
+max    1.330000e+07  16200.000000    6.000000    4.000000    4.000000   
+
+          parking  
+count  545.000000  
+mean     0.693578  
+std      0.861586  
+min      0.000000  
+25%      0.000000  
+50%      0.000000  
+75%      1.000000  
+max      3.000000  
+
+Missing values:
+price               0
+area                0
+bedrooms            0
+bathrooms           0
+stories             0
+mainroad            0
+guestroom           0
+basement            0
+hotwaterheating     0
+airconditioning     0
+parking             0
+prefarea            0
+furnishingstatus    0
+dtype: int64
+
+ Model Evaluation:
+MAE: 970043.40
+MSE: 1754318687330.66
+RMSE: 1324506.96
+R² Score: 0.65
+
+Model Coefficients:
+                                  Coefficient
+area                             2.359688e+02
+bedrooms                         7.677870e+04
+bathrooms                        1.094445e+06
+stories                          4.074766e+05
+parking                          2.248419e+05
+mainroad_yes                     3.679199e+05
+guestroom_yes                    2.316100e+05
+basement_yes                     3.902512e+05
+hotwaterheating_yes              6.846499e+05
+airconditioning_yes              7.914267e+05
+prefarea_yes                     6.298906e+05
+furnishingstatus_semi-furnished -1.268818e+05
+furnishingstatus_unfurnished    -4.136451e+05
+
+Intercept: 260032.36
+
+ Interpretation of Coefficients:
+Each 1 unit increase in 'area' increases predicted price by 235.97 units.
+Each 1 unit increase in 'bedrooms' increases predicted price by 76778.70 units.
+Each 1 unit increase in 'bathrooms' increases predicted price by 1094444.79 units.
+Each 1 unit increase in 'stories' increases predicted price by 407476.59 units.
+Each 1 unit increase in 'parking' increases predicted price by 224841.91 units.
+Each 1 unit increase in 'mainroad_yes' increases predicted price by 367919.95 units.
+Each 1 unit increase in 'guestroom_yes' increases predicted price by 231610.04 units.
+Each 1 unit increase in 'basement_yes' increases predicted price by 390251.18 units.
+Each 1 unit increase in 'hotwaterheating_yes' increases predicted price by 684649.89 units.
+Each 1 unit increase in 'airconditioning_yes' increases predicted price by 791426.74 units.
+Each 1 unit increase in 'prefarea_yes' increases predicted price by 629890.57 units.
+Each 1 unit increase in 'furnishingstatus_semi-furnished' increases predicted price by -126881.82 units.
+Each 1 unit increase in 'furnishingstatus_unfurnished' increases predicted price by -413645.06 units.
