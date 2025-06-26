@@ -137,7 +137,7 @@ Plot Actual vs Predicted prices: Helps see how well the model is doing.
 
 Plot Residuals (errors): Helps check if errors are normally distributed (good sign).
 
-
+---
 12. Correlation Heatmap
 
 You create a heatmap to visualize how strongly each feature is related to the others and to the price. This helps understand which features are most influential.
